@@ -1,0 +1,270 @@
+/* main.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Kufi Arabic", "Roboto Mono", sans-serif;
+  color: rgba(240, 248, 255, 0.941);
+}
+
+body {
+  background-color: rgb(23, 32, 42);
+}
+
+.flexbox {
+ 
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+/* ######Header######## */
+
+.header {
+  display: flex;
+  
+
+  margin-bottom: 10px;
+  background-color: rgb(45, 54, 69);
+}
+.header .logInfo {
+  display: flex;
+}
+.header .logInfo p {
+  font-size: 10px;
+  padding: 10px;
+}
+
+.header .logInfo .p1 {
+  padding-right: 549px;
+}
+
+.header .logInfo .fa-users {
+  padding-top: 10px;
+  color: rgb(81, 170, 182);
+}
+.header .logInfo .fa-arrow-down {
+  padding: 13px 0 0 10px;
+  font-size: small;
+}
+
+.header .pageSeting {
+  display: flex;
+}
+.header .pageSeting p {
+  font-size: 10px;
+  padding: 10px;
+}
+.header .pageSeting .p2 {
+  border-right: 1px solid rgb(172, 172, 172);
+}
+.header .pageSeting .p3 {
+  margin-right: 13px;
+  color: rgb(211, 210, 210);
+}
+.header .pageSeting .fa-toggle-on {
+  padding-top: 13px;
+  color: rgb(81, 170, 182);
+}
+.header .pageSeting .fa-long-arrow-left {
+  padding: 13px 0 0 15px;
+  color: rgb(211, 210, 210);
+  font-size: small;
+}
+
+
+
+
+/* ######Left-Board######## */
+
+.leftBaord {
+  display: block;
+  justify-content: center;
+  width: 30%;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: rgb(45, 54, 69);
+}
+
+.leftBaord .topSection {
+  height: 30%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+}
+
+.left-bottom,
+.left-top p {
+  justify-content: right;
+  direction: rtl;
+}
+.left-top p {
+  padding-top: 50px;
+  font-size: x-large;
+}
+.left-bottom p {
+  padding-top: 0px;
+
+}
+
+.right {
+
+  padding: 20px;
+  overflow: hidden;
+}
+.right p {
+  padding: 9px 0 0 0;
+  font-size: 9vh;
+  font-weight: 500;
+}
+
+.leftBaord .middleSection {
+
+  height: 30%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.leftBaord .bottomSection {
+
+  height: 20%;
+}
+
+.leftBaord .middleSection .middleSectionRight {
+  display: block;
+  
+  direction: rtl;
+  padding-right: 30px;
+  font-size: small;
+}
+
+li {
+  list-style: none;
+  display: flex;
+}
+
+.leftBaord .middleSection .middleSectionLeft,
+li p {
+  font-size: small;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+.left-bottom .middleSection .middleSectionLeft,
+li .bar {
+  background: rgb(82, 95, 109);
+  display: block;
+  height: 8px;
+  width: 150px;
+
+  border-radius: 10px;
+  margin-top: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.24);
+}
+.left-bottom .middleSection .middleSectionLeft,
+li .bar span {
+  height: 8px;
+  float: right;
+}
+
+.bar1 {
+  width: 30%;
+  background: rgb(81, 170, 182);
+  border-radius: 10px;
+}
+.bar2 {
+  width: 40%;
+  background: rgb(81, 170, 182);
+  border-radius: 10px;
+}
+.bar3 {
+  width: 40%;
+  background: rgb(81, 170, 182);
+  border-radius: 10px;
+}
+.bar4 {
+  width: 20%;
+  background: rgb(81, 170, 182);
+  border-radius: 10px;
+}
+.bar5 {
+  width: 80%;
+  background: rgb(81, 170, 182);
+  border-radius: 10px;
+}
+.bar6 {
+  width: 20%;
+  background: rgb(81, 170, 182);
+  border-radius: 10px;
+}
+.bar7 {
+  width: 25%;
+  background: rgb(81, 170, 182);
+  border-radius: 10px;
+}
+
+.leftBaord .bottomSection {
+  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.leftBaord .bottomSection .left-container .left-top .Ltp {
+  justify-content: center;
+  font-size: large;
+  font-weight: 700;
+}
+
+.leftBaord .bottomSection .right p i {
+  font-size: 50px;
+}
+
+
+
+/* ######Main-Board######## */
+.mainBoard {
+  width: 70%;
+  height: 100%;
+  background-color: rgb(45, 54, 69);
+  margin-left: 10px;
+}
+
+.mainBoard .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-auto-rows: 50px;
+  column-gap: 9rem;
+  row-gap: 10rem;
+
+  justify-content: center;
+
+  margin-top: 120px;
+  margin-right: 60px;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgb(82, 95, 109);
+  margin: 10px; 
+}
+.mainBoard .grid .circle p {
+
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: small;
+}
